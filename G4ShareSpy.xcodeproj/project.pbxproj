@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -24,7 +24,6 @@
 		43AB513921331BA700B3D58D /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AB513821331BA700B3D58D /* LocalizedString.swift */; };
 		43AB513C21331BBF00B3D58D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43AB513A21331BBF00B3D58D /* Localizable.strings */; };
 		43BC2C9821157D2A00F9628F /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BC2C9721157D2900F9628F /* LoopKit.framework */; };
-		43BC2C9A21157D9300F9628F /* LoopKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BC2C9921157D9300F9628F /* LoopKitUI.framework */; };
 		43BC2C9F21157DF300F9628F /* G4CGMManager+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC2C9D21157DF200F9628F /* G4CGMManager+UI.swift */; };
 		43BC2CA021157DF300F9628F /* G4CGMManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC2C9E21157DF200F9628F /* G4CGMManager.swift */; };
 		43BC2CA321157E4300F9628F /* ShareClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BC2CA121157E4300F9628F /* ShareClient.framework */; };
@@ -52,6 +51,13 @@
 		4DCEF2811D41A2E800724BCD /* MessageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEF2751D41A2E800724BCD /* MessageHeader.swift */; };
 		4DCEF2821D41A2E800724BCD /* SystemTimeMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEF2761D41A2E800724BCD /* SystemTimeMessage.swift */; };
 		4DCEF2831D41A2E800724BCD /* Receiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCEF2771D41A2E800724BCD /* Receiver.swift */; };
+		C17D3CC92184CFEB003458C8 /* LoopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BC2C9721157D2900F9628F /* LoopKit.framework */; };
+		C17D3CCB2184D00D003458C8 /* ShareClient.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43BC2CA121157E4300F9628F /* ShareClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C17D3CCC2184D012003458C8 /* LoopKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43BC2C9721157D2900F9628F /* LoopKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1CE2E8921FBD4A4005C2A3B /* LoopKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BC2C9921157D9300F9628F /* LoopKitUI.framework */; };
+		C1CE2E8A21FBD4ED005C2A3B /* LoopKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BC2C9921157D9300F9628F /* LoopKitUI.framework */; };
+		C1CE2E8B21FBD540005C2A3B /* LoopKitUI.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43BC2C9921157D9300F9628F /* LoopKitUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1CE2E8C21FBD560005C2A3B /* ShareClientUI.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 43BC2CA221157E4300F9628F /* ShareClientUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +76,22 @@
 			remoteInfo = G4ShareSpy;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C17D3CCA2184CFFF003458C8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C1CE2E8C21FBD560005C2A3B /* ShareClientUI.framework in CopyFiles */,
+				C1CE2E8B21FBD540005C2A3B /* LoopKitUI.framework in CopyFiles */,
+				C17D3CCC2184D012003458C8 /* LoopKit.framework in CopyFiles */,
+				C17D3CCB2184D00D003458C8 /* ShareClient.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		43AB513821331BA700B3D58D /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
@@ -124,7 +146,7 @@
 			files = (
 				43BC2CA621157E6A00F9628F /* HealthKit.framework in Frameworks */,
 				43BC2C9821157D2A00F9628F /* LoopKit.framework in Frameworks */,
-				43BC2C9A21157D9300F9628F /* LoopKitUI.framework in Frameworks */,
+				C1CE2E8921FBD4A4005C2A3B /* LoopKitUI.framework in Frameworks */,
 				43BC2CA321157E4300F9628F /* ShareClient.framework in Frameworks */,
 				43BC2CA421157E4300F9628F /* ShareClientUI.framework in Frameworks */,
 			);
@@ -135,6 +157,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DCEF25B1D41A2A200724BCD /* G4ShareSpy.framework in Frameworks */,
+				C1CE2E8A21FBD4ED005C2A3B /* LoopKitUI.framework in Frameworks */,
+				C17D3CC92184CFEB003458C8 /* LoopKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +293,7 @@
 				4DCEF2561D41A2A200724BCD /* Sources */,
 				4DCEF2571D41A2A200724BCD /* Frameworks */,
 				4DCEF2581D41A2A200724BCD /* Resources */,
+				C17D3CCA2184CFFF003458C8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -305,7 +330,7 @@
 				};
 			};
 			buildConfigurationList = 4DCEF24A1D41A2A200724BCD /* Build configuration list for PBXProject "G4ShareSpy" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -364,7 +389,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"$CARTHAGE\" = \"YES\" ]; then\n    echo \"Skipping carthage build because we're already in one\"\nelif [ -d $PROJECT_DIR/../../../Loop.xcworkspace ]; then\n    echo \"Skipping carthage build because we're in a workspace\"\nelif [ -f $PROJECT_DIR/.gitmodules ]; then\n    echo \"Skipping checkout due to presence of .gitmodules file\"\n    if [ $ACTION = \"install\" ]; then\n        echo \"You're installing: Make sure to keep all submodules up-to-date and run carthage build after changes.\"\n    fi\nelse\n    echo \"Bootstrapping carthage dependencies\"\n    /usr/local/bin/carthage bootstrap --project-directory \"$SRCROOT\" --cache-builds\nfi\n";
+			shellScript = "if [ \"$CARTHAGE\" = \"YES\" ]; then\n    echo \"Skipping carthage build because we're already in one\"\nelif [ -d $PROJECT_DIR/../../../Loop.xcworkspace ]; then \n    echo \"Skipping carthage build because we're in a workspace\"\nelif [ -f $PROJECT_DIR/.gitmodules ]; then\n    echo \"Skipping checkout due to presence of .gitmodules file\"\n    if [ $ACTION = \"install\" ]; then\n        echo \"You're installing: Make sure to keep all submodules up-to-date and run carthage build after changes.\"\n    fi\nelse\n    unset LLVM_TARGET_TRIPLE_SUFFIX\n    echo \"Bootstrapping carthage dependencies\"\n    /usr/local/bin/carthage bootstrap --project-directory \"$SRCROOT\" --cache-builds\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -489,7 +514,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -512,7 +537,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -550,7 +575,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -565,8 +590,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -581,7 +607,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 3;
+				DYLIB_CURRENT_VERSION = 4;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -589,7 +615,11 @@
 				);
 				INFOPLIST_FILE = G4ShareSpy/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.warkmilson.G4ShareSpy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -604,7 +634,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 3;
+				DYLIB_CURRENT_VERSION = 4;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -612,7 +642,11 @@
 				);
 				INFOPLIST_FILE = G4ShareSpy/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.warkmilson.G4ShareSpy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -622,20 +656,42 @@
 		4DCEF2681D41A2A200724BCD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = G4ShareSpyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.warkmilson.G4ShareSpyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		4DCEF2691D41A2A200724BCD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = G4ShareSpyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.warkmilson.G4ShareSpyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
