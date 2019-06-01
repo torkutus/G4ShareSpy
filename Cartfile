@@ -1,0 +1,2 @@
+github "LoopKit/LoopKit" ~> 2.0
+github "torkutus/dexcom-share-client-swift" "master"
